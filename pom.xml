@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>tech.lapsa.maven</groupId>
+		<artifactId>maven-general</artifactId>
+		<version>3.1</version>
+	</parent>
+
+	<groupId>tech.lapsa.eurasia</groupId>
+	<artifactId>eurasia-dao-client</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Eurasia Lib : DAO : EJB-client</name>
+
+	<properties>
+		<!-- BOMS -->
+		<javax-javaee-bom.version>7.0a</javax-javaee-bom.version>
+		<payara-bom.version>4.1.2-2</payara-bom.version>
+		<!-- tech -->
+		<patterns-dao.version>1.2.1</patterns-dao.version>
+		<eurasia-domain.version>1.0-SNAPSHOT</eurasia-domain.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- BOMS -->
+			<dependency>
+				<groupId>tech.lapsa.javax</groupId>
+				<artifactId>javax-javaee-bom</artifactId>
+				<version>${javax-javaee-bom.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>tech.lapsa.payara</groupId>
+				<artifactId>payara-bom</artifactId>
+				<version>${payara-bom.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>tech.lapsa.patterns</groupId>
+				<artifactId>patterns-dao-root</artifactId>
+				<version>${patterns-dao.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- tech -->
+			<dependency>
+				<groupId>tech.lapsa.eurasia</groupId>
+				<artifactId>eurasia-domain</artifactId>
+				<version>${eurasia-domain.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- tech -->
+		<dependency>
+			<groupId>tech.lapsa.patterns</groupId>
+			<artifactId>patterns-dao-api</artifactId>
+			<scope>compile</scope>
+			<optional>false</optional>
+		</dependency>
+		<dependency>
+			<groupId>tech.lapsa.eurasia</groupId>
+			<artifactId>eurasia-domain</artifactId>
+			<scope>compile</scope>
+			<optional>false</optional>
+		</dependency>
+		<!-- Payara -->
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- JavaEE -->
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>javax.ejb-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<scm>
+		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/eurasia/dao-client.git</connection>
+		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/eurasia/dao-client.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>gitlab</system>
+		<url>https://gitlab.lapsa.tech/lapsa/eurasia/dao-client/issues</url>
+	</issueManagement>
+
+</project>
