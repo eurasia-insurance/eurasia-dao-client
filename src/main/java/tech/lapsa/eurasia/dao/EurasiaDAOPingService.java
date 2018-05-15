@@ -10,11 +10,11 @@ public interface EurasiaDAOPingService extends EJBConstants {
     public static final String BEAN_NAME = "InsuranceDAOPingServiceBean";
 
     @Local
-    public interface InsuranceDAOPingServiceLocal extends EurasiaDAOPingService {
+    public interface EurasiaDAOPingServiceLocal extends EurasiaDAOPingService {
     }
 
     @Remote
-    public interface InsuranceDAOPingServiceRemote extends EurasiaDAOPingService {
+    public interface EurasiaDAOPingServiceRemote extends EurasiaDAOPingService {
     }
 
     void ping() throws IllegalState;
