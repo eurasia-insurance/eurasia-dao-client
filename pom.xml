@@ -9,18 +9,18 @@
 
 	<groupId>tech.lapsa.eurasia</groupId>
 	<artifactId>eurasia-dao-client</artifactId>
-	<version>1.0</version>
+	<version>CURRENT-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Eurasia Lib : DAO : EJB-client</name>
 
 	<properties>
 		<!-- BOMS -->
-		<javax-javaee-bom.version>7.0a</javax-javaee-bom.version>
-		<payara-bom.version>4.1.2-2</payara-bom.version>
+		<javax-javaee-bom.version>CURRENT-SNAPSHOT</javax-javaee-bom.version>
+		<payara-bom.version>CURRENT-SNAPSHOT</payara-bom.version>
 		<!-- tech -->
-		<patterns-dao.version>1.2.1</patterns-dao.version>
-		<eurasia-domain.version>1.0</eurasia-domain.version>
+		<patterns-dao.version>CURRENT-SNAPSHOT</patterns-dao.version>
+		<eurasia-domain.version>CURRENT-SNAPSHOT</eurasia-domain.version>
 	</properties>
 
 	<dependencyManagement>
