@@ -21,4 +21,6 @@ public interface CompanyPointOfSaleDAO extends GeneralDAO<CompanyPointOfSale, In
     }
 
     List<CompanyPointOfSale> findAll();
+
+    List<CompanyPointOfSale> findAllByAvailable(boolean available);
 }
