@@ -9,7 +9,7 @@
 
 	<groupId>tech.lapsa.eurasia</groupId>
 	<artifactId>eurasia-dao-client</artifactId>
-	<version>20190127r1</version>
+	<version>CURRENT-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Eurasia Lib : DAO : EJB-client</name>
@@ -87,7 +87,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/eurasia-insurance/eurasia-dao-client.git</connection>
 		<developerConnection>scm:git:https://github.com/eurasia-insurance/eurasia-dao-client.git</developerConnection>
-		<tag>v20190127r1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
